@@ -141,25 +141,24 @@ document.querySelectorAll('.mobile-nav-link').forEach(l => {
 let productCards = [];
 function updateProductCards() { productCards = document.querySelectorAll('.product-card'); }
 
-const tabContainer = document.querySelector('.tab-container');
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabIndicator = document.querySelector('.tab-indicator');
+const productTabContainer = document.querySelector('#produk .tab-container');
+const productTabBtns = document.querySelectorAll('#produk .tab-btn');
+const productTabIndicator = document.querySelector('#produk .tab-indicator');
 
-function moveIndicator(btn) {
-  if (!tabIndicator || !btn) return;
-  tabIndicator.style.left = btn.offsetLeft + 'px';
-  tabIndicator.style.width = btn.offsetWidth + 'px';
+function moveIndicator(indicator, btn) {
+  if (!indicator || !btn) return;
+  indicator.style.left = btn.offsetLeft + 'px';
+  indicator.style.width = btn.offsetWidth + 'px';
 }
 
-// Init indicator on first active
-const firstActive = document.querySelector('.tab-btn.active');
-if (firstActive) requestAnimationFrame(() => moveIndicator(firstActive));
+const firstProductActive = document.querySelector('#produk .tab-btn.active');
+if (firstProductActive) requestAnimationFrame(() => moveIndicator(productTabIndicator, firstProductActive));
 
-tabBtns.forEach(btn => {
+productTabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    tabBtns.forEach(b => b.classList.remove('active'));
+    productTabBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    moveIndicator(btn);
+    moveIndicator(productTabIndicator, btn);
 
     const tab = btn.dataset.tab;
     productCards.forEach(card => {
@@ -174,6 +173,38 @@ tabBtns.forEach(btn => {
         });
       } else {
         card.classList.add('hidden-card');
+      }
+    });
+  });
+});
+
+// ========== LEARNING TABS ==========
+const learningTabBtns = document.querySelectorAll('.learning-tab-btn');
+const learningTabIndicator = document.querySelector('.learning-tab-indicator');
+const learningPanels = document.querySelectorAll('.learning-panel');
+const firstLearningActive = document.querySelector('.learning-tab-btn.active');
+
+if (firstLearningActive) requestAnimationFrame(() => moveIndicator(learningTabIndicator, firstLearningActive));
+
+learningTabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    learningTabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    moveIndicator(learningTabIndicator, btn);
+
+    const activeTab = btn.dataset.learningTab;
+    learningPanels.forEach(panel => {
+      if (panel.dataset.learningPanel === activeTab) {
+        panel.classList.remove('hidden');
+        panel.style.opacity = '0';
+        panel.style.transform = 'translateY(16px)';
+        requestAnimationFrame(() => {
+          panel.style.transition = 'opacity 0.35s, transform 0.35s';
+          panel.style.opacity = '1';
+          panel.style.transform = 'translateY(0)';
+        });
+      } else {
+        panel.classList.add('hidden');
       }
     });
   });
