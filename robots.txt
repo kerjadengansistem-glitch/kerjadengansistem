@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kerjadengansistem.web.id/sitemap.xml
