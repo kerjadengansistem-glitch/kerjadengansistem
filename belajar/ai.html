@@ -1,34 +1,197 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pelajaran AI - Kerja dengan Sistem</title>
+  <title>Belajar AI Education — Kerja dengan Sistem</title>
+  <meta name="description" content="Jalur belajar AI Education dari Kerja dengan Sistem untuk memahami konsep dasar AI, AI generatif, AI agent, dan cara memakainya dengan lebih tepat untuk kebutuhan kerja dan bisnis." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.kerjadengansistem.web.id/belajar/ai" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Belajar AI Education — Kerja dengan Sistem" />
+  <meta property="og:description" content="Mulai memahami AI dari konsep paling dasar sampai pemakaian yang lebih praktis untuk bisnis dan pekerjaan sehari-hari." />
+  <meta property="og:url" content="https://www.kerjadengansistem.web.id/belajar/ai" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Belajar AI Education — Kerja dengan Sistem" />
+  <meta name="twitter:description" content="Jalur belajar AI untuk memahami konsep dasar, AI generatif, dan AI agent secara lebih rapi dan praktis." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0EA5E9',
+            'primary-light': '#38BDF8',
+            accent: '#8B5CF6',
+            'accent-light': '#A78BFA',
+            dark: { 950: '#030712', 900: '#0B0F19', 800: '#111827', 700: '#1F2937' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="openclaw.html">OpenClaw</a></li>
-      <li><a href="n8n.html">n8n</a></li>
-    </ul>
+<body class="bg-dark-950 text-gray-300 font-sans antialiased overflow-x-hidden">
+  <nav class="sticky top-0 z-50 bg-dark-950/85 backdrop-blur-xl border-b border-white/[0.04]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-[72px]">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <span class="font-display font-bold text-[15px] text-white tracking-tight">Kerja<span class="text-primary">dengan</span>Sistem</span>
+        </a>
+        <div class="hidden md:flex items-center gap-2">
+          <a href="/belajar/ai" class="nav-link text-white bg-white/[0.06]">AI Education</a>
+          <a href="/belajar/openclaw" class="nav-link">OpenClaw</a>
+          <a href="/belajar/n8n" class="nav-link">n8n</a>
+          <a href="https://artikel.kerjadengansistem.web.id/" target="_blank" rel="noopener" class="btn-cta-small ml-2">Buka Blog</a>
+        </div>
+      </div>
+    </div>
   </nav>
-  <section>
+
+  <section class="relative overflow-hidden">
     <div class="hero-glow"></div>
-    <h1>Pelajaran tentang AI</h1>
-    <p>Di bagian ini, Anda akan menemukan berbagai pelajaran tentang AI dan penerapannya.</p>
-    <div class="roadmap">
-      <h2>Daftar Pelajaran</h2>
-      <ul>
-        <li><a href="https://artikel.kerjadengansistem.web.id/artikel/revolusi-ai-generatif-2026.html">Pelajaran 01: Revolusi AI Generatif 2026</a></li>
-        <li><a href="https://artikel.kerjadengansistem.web.id/artikel/apa-itu-ai-agent-dan-kenapa-bisnis-mulai-memakainya.html">Pelajaran 02: Apa Itu AI Agent?</a></li>
-      </ul>
-      <p><strong>Status Materi:</strong> Segera hadir untuk pelajaran lainnya.</p>
+    <div class="hero-grid"></div>
+    <div class="hero-radial"></div>
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-16 sm:pt-24 sm:pb-20">
+      <div class="max-w-4xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-[13px] text-gray-400 mb-7">
+          <span class="section-label !text-primary before:!bg-primary">Jalur Belajar</span>
+          <span>AI Education</span>
+        </div>
+        <h1 class="font-display text-[clamp(2.2rem,5vw,4.2rem)] font-extrabold text-white leading-[1.05] tracking-tight mb-5">
+          Mulai memahami <span class="hero-gradient-text">AI dengan jalur yang lebih rapi</span>
+        </h1>
+        <p class="max-w-3xl text-[16px] sm:text-lg text-gray-400 leading-relaxed mb-8">
+          Halaman ini dibuat untuk membantu pengunjung memahami AI dari pondasi paling dasar, mengenali perubahan besar seperti AI generatif, lalu naik ke pembahasan yang lebih relevan untuk kebutuhan kerja, bisnis, dan automation modern.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#roadmap" class="btn-primary">Lihat roadmap AI</a>
+          <a href="https://artikel.kerjadengansistem.web.id/" target="_blank" rel="noopener" class="btn-ghost">Buka semua artikel</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-14">
+        <div class="pillar-card">
+          <div class="section-label mb-4">Fokus</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Konsep Dasar</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Memahami istilah, cara kerja umum AI, dan perbedaan antara hype dengan manfaat yang benar-benar praktis.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="section-label mb-4">Target</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Pemula sampai Praktisi</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Cocok untuk yang baru mulai belajar AI maupun yang ingin menata pemahaman sebelum masuk ke automation lebih lanjut.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="section-label mb-4">Hasil</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Lebih Siap Memilih Tool</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Setelah memahami jalur ini, pengunjung lebih mudah menentukan tool, pendekatan, dan use case yang relevan.</p>
+        </div>
+      </div>
     </div>
   </section>
-  <footer>
-      <p>© 2026 Kerja dengan Sistem. Semua hak dilindungi.</p>
-  </footer>
+
+  <section id="roadmap" class="py-20 relative">
+    <div class="section-glow-left"></div>
+    <div class="section-glow-right"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-12">
+        <div class="section-label justify-center mb-4">Roadmap Materi</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Belajar bertahap, tidak loncat-loncat</h2>
+        <p class="max-w-3xl mx-auto text-gray-400 text-[15px] leading-relaxed">Mulai dari materi yang sudah tersedia, lalu lanjut ke topik yang akan dikembangkan berikutnya agar jalur belajar ini makin lengkap.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <a href="https://artikel.kerjadengansistem.web.id/artikel/revolusi-ai-generatif-2026.html" target="_blank" rel="noopener" class="learning-card">
+          <div class="learning-card-title">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-2">Pelajaran 01</div>
+              <h3 class="font-display text-xl font-bold text-white">Revolusi AI Generatif 2026</h3>
+            </div>
+            <span class="learning-badge live">Tersedia</span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">Mulai dari perubahan besar yang dibawa AI generatif, kenapa topik ini penting, dan mengapa banyak bisnis mulai menaruh perhatian ke teknologi ini.</p>
+          <div class="learning-link-note text-primary">Baca sekarang →</div>
+        </a>
+
+        <a href="https://artikel.kerjadengansistem.web.id/artikel/apa-itu-ai-agent-dan-kenapa-bisnis-mulai-memakainya.html" target="_blank" rel="noopener" class="learning-card">
+          <div class="learning-card-title">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-2">Pelajaran 02</div>
+              <h3 class="font-display text-xl font-bold text-white">Apa Itu AI Agent dan Kenapa Bisnis Memakainya</h3>
+            </div>
+            <span class="learning-badge live">Tersedia</span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">Setelah paham AI generatif, langkah berikutnya adalah mengenali AI agent: kapan berguna, bagaimana bekerja, dan apa dampaknya pada operasional bisnis.</p>
+          <div class="learning-link-note text-primary">Baca sekarang →</div>
+        </a>
+
+        <div class="learning-card is-disabled">
+          <div class="learning-card-title">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-accent-light font-semibold mb-2">Pelajaran 03</div>
+              <h3 class="font-display text-xl font-bold text-white">Cara Memilih Tool AI yang Tepat</h3>
+            </div>
+            <span class="learning-badge soon">Segera hadir</span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">Panduan membedakan tool AI untuk menulis, riset, agent, analisis, dan automation agar tidak asal ikut tren.</p>
+        </div>
+
+        <div class="learning-card is-disabled">
+          <div class="learning-card-title">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-accent-light font-semibold mb-2">Pelajaran 04</div>
+              <h3 class="font-display text-xl font-bold text-white">Prompt, Workflow, dan Kebiasaan Kerja</h3>
+            </div>
+            <span class="learning-badge soon">Segera hadir</span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">Materi lanjutan untuk membantu pengunjung memakai AI secara lebih konsisten, bukan hanya coba-coba sekali lalu berhenti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="newsletter-card text-center">
+        <div class="section-label justify-center mb-4">Lanjutkan Belajar</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Ingin pindah ke jalur lain?</h2>
+        <p class="max-w-2xl mx-auto text-gray-400 text-[15px] leading-relaxed mb-8">Setelah memahami dasar AI, pengunjung bisa lanjut ke jalur OpenClaw untuk AI agent atau ke jalur n8n untuk workflow automation.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+          <a href="/belajar/openclaw" class="btn-primary">Lanjut ke OpenClaw</a>
+          <a href="/belajar/n8n" class="btn-ghost">Lanjut ke n8n</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+          <a href="/" class="pillar-card block hover:border-primary/30">
+            <div class="section-label mb-4">Homepage</div>
+            <h3 class="font-display font-bold text-white text-lg mb-2">Kembali ke halaman utama</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Untuk melihat ringkasan produk, artikel, dan arah platform secara umum.</p>
+          </a>
+          <a href="https://artikel.kerjadengansistem.web.id/" target="_blank" rel="noopener" class="pillar-card block hover:border-accent/30">
+            <div class="section-label mb-4">Blog</div>
+            <h3 class="font-display font-bold text-white text-lg mb-2">Buka semua artikel</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Untuk membaca lebih banyak pembahasan seputar AI, sistem kerja, dan automation.</p>
+          </a>
+          <a href="https://lynk.id/kerjadengansistem" target="_blank" rel="noopener" class="pillar-card block hover:border-emerald-400/30">
+            <div class="section-label mb-4">Produk</div>
+            <h3 class="font-display font-bold text-white text-lg mb-2">Lihat produk digital</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Untuk pengunjung yang ingin langsung melihat produk dan penawaran yang sedang tersedia.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
