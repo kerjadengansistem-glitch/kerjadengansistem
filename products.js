@@ -4,7 +4,7 @@ const PRODUCTS = [
     kategori: "berbayar",
     tipe: "Web App",
     deskripsi: "Web app dashboard keuangan untuk membantu memantau ringkasan keuangan, membaca pergerakan data, dan melihat kondisi bisnis dengan tampilan yang lebih rapi dan mudah dipahami.",
-    gambar: "https://res.cloudinary.com/dilamvetq/image/upload/v1775504554/copy_of_iv3x53tl4mzhhj9aacy1_dfb6b8.png",
+    gambar: "https://res.cloudinary.com/dilamvetq/image/upload/v1777495062/copy_of_fkg6inffi8w2wfq3nxmr_dd183d.png",
     harga: "Produk Digital",
     hargaCoret: "",
     tombol: "Pelajari Lebih Lanjut",
