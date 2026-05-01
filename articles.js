@@ -1,74 +1,62 @@
-/**
- * ============================================
- *   DAFTAR ARTIKEL EDUKASI - EDIT DI SINI!
- * ============================================
- * 
- * Cara menambah artikel baru:
- * 1. Copy salah satu contoh artikel di bawah
- * 2. Paste di bawah artikel terakhir (sebelum tanda ])
- * 3. Ganti isinya sesuai artikel Anda
- * 4. Save file, refresh browser — selesai!
- * 
- * PENJELASAN SETIAP FIELD:
- * 
- *   judul       → Judul artikel
- *   kategori    → Label kategori, contoh: "AI Tools", "Automation", "Bisnis", "Tutorial"
- *   waktuBaca   → Estimasi waktu baca, contoh: "5 min baca"
- *   deskripsi   → Ringkasan singkat artikel (1-2 kalimat)
- *   gambar      → Link gambar artikel (paste URL gambar di sini, kosongkan "" jika tidak ada — akan tampil ikon default)
- *                  Contoh: "https://i.imgur.com/xxxxx.png" atau "images/artikel1.jpg"
- *   link        → URL ke artikel lengkap (bisa link blog, Medium, dll)
- *   warna       → Pilih: "biru", "ungu", "hijau", "kuning", "merah", "cyan", "pink", "oranye"
- *   ikon        → Pilih: "komputer", "kode", "grafik", "robot", "petir", "buku", "video", "web" (hanya tampil jika gambar kosong)
- */
-
 const ARTICLES = [
-
   {
-    judul: "5 AI Tools yang Wajib Anda Coba di 2026",
-    kategori: "AI Tools",
-    waktuBaca: "5 min baca",
-    deskripsi: "Temukan tools AI terbaru yang bisa mengubah cara Anda bekerja dan meningkatkan produktivitas.",
-    gambar: "",
-    link: "#",
-    warna: "biru",
-    ikon: "komputer",
-  },
-
-  {
-    judul: "Cara Membuat Chatbot WhatsApp dengan AI",
-    kategori: "Automation",
+    judul: "Apa Itu AI Agent dan Kenapa Bisnis Mulai Memakainya?",
+    kategori: "AI Agent",
     waktuBaca: "8 min baca",
-    deskripsi: "Tutorial step-by-step membuat chatbot WhatsApp yang cerdas menggunakan AI dan automasi.",
-    gambar: "",
-    link: "#",
-    warna: "ungu",
-    ikon: "kode",
+    deskripsi: "Memahami mengapa AI agent mulai dipakai untuk membantu operasional, customer handling, dan alur kerja yang lebih cerdas.",
+    gambar: "https://images.unsplash.com/photo-1676299081847-824916de030a?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/apa-itu-ai-agent-dan-kenapa-bisnis-mulai-memakainya.html",
+    warna: "biru",
+    ikon: "robot"
   },
-
   {
-    judul: "Menghemat 20 Jam/Minggu dengan Automasi",
-    kategori: "Bisnis",
-    waktuBaca: "6 min baca",
-    deskripsi: "Studi kasus nyata bagaimana automasi bisa menghemat waktu dan meningkatkan revenue bisnis.",
-    gambar: "",
-    link: "#",
-    warna: "hijau",
-    ikon: "grafik",
+    judul: "5 Tools Automation yang Wajib Anda Kuasai di 2026",
+    kategori: "Automation",
+    waktuBaca: "10 min baca",
+    deskripsi: "Panduan memilih tools automation yang paling relevan untuk bisnis, operasional, dan workflow modern.",
+    gambar: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/tools-automation-yang-wajib-dikuasai-2026.html",
+    warna: "ungu",
+    ikon: "kode"
   },
-
-  // ─── TAMBAH ARTIKEL BARU DI BAWAH INI ──────────
-  // Copy contoh di bawah, hapus tanda // di depannya, lalu edit isinya:
-  //
-  // {
-  //   judul: "Judul Artikel Anda",
-  //   kategori: "Tutorial",
-  //   waktuBaca: "7 min baca",
-  //   deskripsi: "Deskripsi singkat artikel Anda di sini.",
-  //   gambar: "https://link-gambar-artikel-anda.com/gambar.jpg",
-  //   link: "https://linkartikel.com",
-  //   warna: "biru",
-  //   ikon: "komputer",
-  // },
-
+  {
+    judul: "Membangun Chatbot AI untuk Bisnis",
+    kategori: "Chatbot AI",
+    waktuBaca: "10 min baca",
+    deskripsi: "Langkah praktis membangun chatbot AI yang berguna, aman, dan benar-benar membantu kebutuhan bisnis.",
+    gambar: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/membangun-chatbot-ai-untuk-bisnis.html",
+    warna: "hijau",
+    ikon: "komputer"
+  },
+  {
+    judul: "Panduan Lengkap Machine Learning untuk Pemula",
+    kategori: "Machine Learning",
+    waktuBaca: "11 min baca",
+    deskripsi: "Penjelasan runtut tentang machine learning untuk pemula yang ingin paham konsep, alur kerja, dan tools dasarnya.",
+    gambar: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/panduan-machine-learning-untuk-pemula.html",
+    warna: "cyan",
+    ikon: "grafik"
+  },
+  {
+    judul: "Data Science & AI: Mengolah Data Menjadi Keputusan Cerdas",
+    kategori: "Data Science",
+    waktuBaca: "10 min baca",
+    deskripsi: "Bagaimana data science dan AI membantu bisnis membaca pola, memahami perilaku, dan mengambil keputusan lebih kuat.",
+    gambar: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/data-science-dan-ai-keputusan-cerdas.html",
+    warna: "pink",
+    ikon: "grafik"
+  },
+  {
+    judul: "Robotics & AI: Masa Depan Otomasi Industri",
+    kategori: "Robotics",
+    waktuBaca: "10 min baca",
+    deskripsi: "Membahas bagaimana robotika dan AI mengubah manufaktur, logistik, dan operasi industri modern.",
+    gambar: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80",
+    link: "https://artikel.kerjadengansistem.web.id/artikel/robotics-dan-ai-masa-depan-otomasi-industri.html",
+    warna: "oranye",
+    ikon: "robot"
+  }
 ];
