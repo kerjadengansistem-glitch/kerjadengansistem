@@ -213,6 +213,19 @@ if (nlForm) {
   });
 }
 
+// ========== AUTOMATION CHECK FORM ==========
+const automationForm = document.getElementById('automation-check-form');
+const automationStatus = document.getElementById('automation-check-status');
+if (automationForm) {
+  automationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (automationStatus) {
+      automationStatus.classList.remove('hidden');
+      automationStatus.textContent = 'Form konsultasi sedang disiapkan agar bisa masuk ke inbox khusus. Setelah backend dihubungkan, data akan langsung terkirim dari halaman ini.';
+    }
+  });
+}
+
 // ========== SMOOTH SCROLL ==========
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', function(e) {

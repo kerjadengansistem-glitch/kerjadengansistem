@@ -3,7 +3,7 @@ const PRODUCTS = [
     nama: "Dashboard Keuangan",
     kategori: "berbayar",
     tipe: "Web App",
-    deskripsi: "Web app dashboard keuangan untuk membantu memantau ringkasan keuangan, membaca pergerakan data, dan melihat kondisi bisnis dengan tampilan yang lebih rapi dan mudah dipahami.",
+    deskripsi: "Web app dashboard keuangan untuk membantu memantau ringkasan data, membaca pergerakan keuangan, dan melihat kondisi bisnis dengan tampilan yang lebih rapi dan mudah dipahami."
     gambar: "https://res.cloudinary.com/dilamvetq/image/upload/v1777495062/copy_of_fkg6inffi8w2wfq3nxmr_dd183d.png",
     harga: "Produk Digital",
     hargaCoret: "",
@@ -23,7 +23,7 @@ const PRODUCTS = [
     hargaCoret: "",
     tombol: "Baca Blog",
     link: "https://artikel.kerjadengansistem.web.id/",
-    badge: "UPDATE HARIAN",
+    badge: "BACAAN TERBARU",
     warna: "hijau",
     ikon: "artikel"
   },
@@ -65,7 +65,7 @@ const PRODUCTS = [
     hargaCoret: "",
     tombol: "Baca Sekarang",
     link: "https://artikel.kerjadengansistem.web.id/artikel/tools-automation-yang-wajib-dikuasai-2026.html",
-    badge: "WAJIB BACA",
+    badge: "REKOMENDASI",
     warna: "cyan",
     ikon: "petir"
   },
