@@ -204,6 +204,63 @@
 .pillar-link-purple { color: #A78BFA; }
 .pillar-link-green { color: #34D399; }
 
+/* ========== LEARNING CARD ========== */
+.learning-card {
+  display: block;
+  position: relative;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.learning-card:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+.learning-card.is-disabled {
+  cursor: default;
+}
+.learning-card.is-disabled:hover {
+  background: rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.04);
+  transform: none;
+}
+.learning-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.learning-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.learning-badge.live {
+  background: rgba(16,185,129,0.12);
+  color: #6EE7B7;
+  border: 1px solid rgba(16,185,129,0.2);
+}
+.learning-badge.soon {
+  background: rgba(148,163,184,0.12);
+  color: #CBD5E1;
+  border: 1px solid rgba(148,163,184,0.16);
+}
+.learning-link-note {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* ========== BLOG CARD ========== */
 .blog-card {
   padding: 16px; border-radius: 16px;
