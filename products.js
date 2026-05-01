@@ -7,8 +7,8 @@ const PRODUCTS = [
     gambar: "https://res.cloudinary.com/dilamvetq/image/upload/v1775504554/copy_of_iv3x53tl4mzhhj9aacy1_dfb6b8.png",
     harga: "Produk Digital",
     hargaCoret: "",
-    tombol: "Pelajari Lebih Lanjut",
-    link: "https://www.panjiarsyaryadillah.web.id/#view-main",
+    tombol: "Lihat Produk",
+    link: "https://lynk.id/kerjadengansistem",
     badge: "PRODUK UTAMA",
     warna: "biru",
     ikon: "web"
