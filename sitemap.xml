@@ -6,17 +6,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.kerjadengansistem.web.id/belajar/ai</loc>
+    <loc>https://www.kerjadengansistem.web.id/belajar/ai.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.kerjadengansistem.web.id/belajar/openclaw</loc>
+    <loc>https://www.kerjadengansistem.web.id/belajar/openclaw.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.kerjadengansistem.web.id/belajar/n8n</loc>
+    <loc>https://www.kerjadengansistem.web.id/belajar/n8n.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
