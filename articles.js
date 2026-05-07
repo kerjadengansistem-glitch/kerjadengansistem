@@ -1,6 +1,16 @@
 const ARTICLES = [
   {
-    judul: "Apa Itu AI Agent dan Kenapa Bisnis Mulai Memakainya?",
+    judul: "Automasi untuk Pemula: Panduan Mulai Tanpa Ribet",
+    kategori: "Automation Pemula",
+    waktuBaca: "9 min baca",
+    deskripsi: "Panduan dasar untuk mulai automation dari proses kerja sederhana yang berulang, tanpa harus langsung membangun sistem yang rumit.",
+    gambar: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=80",
+    link: "https://www.kerjadengansistem.web.id/artikel/automasi-untuk-pemula-panduan-mulai-tanpa-ribet",
+    warna: "hijau",
+    ikon: "petir"
+  },
+  {
+    judul: "Apa Itu AI Agent dan Kenapa Bisnis Mulai Memakainya?", 
     kategori: "AI Agent",
     waktuBaca: "8 min baca",
     deskripsi: "Memahami mengapa AI agent mulai dipakai untuk membantu operasional, customer handling, dan alur kerja yang lebih cerdas.",

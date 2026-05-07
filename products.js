@@ -56,6 +56,20 @@ const PRODUCTS = [
     ikon: "kode"
   },
   {
+    nama: "Automasi untuk Pemula",
+    kategori: "gratis",
+    tipe: "Artikel Gratis",
+    deskripsi: "Panduan awal untuk memahami automation dari proses kerja sederhana yang berulang dan langsung terasa manfaatnya.",
+    gambar: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=80",
+    harga: "GRATIS",
+    hargaCoret: "",
+    tombol: "Baca Sekarang",
+    link: "https://www.kerjadengansistem.web.id/artikel/automasi-untuk-pemula-panduan-mulai-tanpa-ribet",
+    badge: "BARU",
+    warna: "cyan",
+    ikon: "petir"
+  },
+  {
     nama: "Tools Automation 2026",
     kategori: "gratis",
     tipe: "Artikel Gratis",
