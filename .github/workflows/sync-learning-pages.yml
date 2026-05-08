@@ -2,7 +2,7 @@ name: Sync Learning Pages
 
 on:
   schedule:
-    - cron: '15 1 * * *'
+    - cron: '15 23 * * *'
   workflow_dispatch:
 
 permissions:
