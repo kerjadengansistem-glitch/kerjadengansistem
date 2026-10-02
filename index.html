@@ -83,17 +83,17 @@
       theme: {
         extend: {
           colors: {
-            primary: '#0EA5E9',
-            'primary-dark': '#0284C7',
-            'primary-light': '#38BDF8',
-            accent: '#8B5CF6',
-            'accent-light': '#A78BFA',
-            dark: { 950: '#030712', 900: '#0B0F19', 800: '#111827', 700: '#1F2937', 600: '#374151' },
-            surface: '#1E293B'
+            primary: '#E3A23C',
+            'primary-dark': '#B96A28',
+            'primary-light': '#EFB367',
+            accent: '#C0762A',
+            'accent-light': '#D9A066',
+            dark: { 950: '#191813', 900: '#1F1D17', 800: '#26231C', 700: '#312D24', 600: '#3D382C' },
+            surface: '#2B271F'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
             mono: ['JetBrains Mono', 'monospace']
           }
         }
@@ -102,7 +102,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-dark-950 text-gray-300 font-sans antialiased overflow-x-hidden">
@@ -149,95 +149,70 @@
     </div>
   </nav>
 
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="hero-glow"></div>
+  <section class="relative overflow-hidden">
     <div class="hero-grid"></div>
-    <div class="hero-radial"></div>
 
-    <div class="relative max-w-5xl mx-auto px-5 sm:px-8 text-center pt-28 pb-20">
+    <div class="relative max-w-5xl mx-auto px-5 sm:px-8 pt-32 sm:pt-40 pb-16">
       <div class="scroll-reveal">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-[13px] text-gray-400 mb-8 backdrop-blur-sm">
-          <span class="flex h-2 w-2 relative">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-          </span>
-          AI, Automation, dan Sistem Kerja untuk Bisnis Modern
+        <div class="font-mono text-[12px] tracking-[0.14em] uppercase text-[#8B8172] mb-7 border-l-2 border-primary/60 pl-3">
+          Jasa Automasi &mdash; Rekap RAB &middot; Invoice &middot; Laporan
         </div>
 
-        <h1 class="font-display text-[clamp(2.5rem,6vw,4.8rem)] font-extrabold text-white leading-[1.05] tracking-tight mb-6">
+        <h1 class="font-display text-[clamp(2.3rem,5.2vw,4.2rem)] font-bold text-[#F2EDE4] leading-[1.06] tracking-[-0.015em] mb-6 max-w-[14ch]">
           Bangun Bisnis yang<br/>
           <span class="hero-gradient-text">Lebih Rapi, Lebih Otomatis.</span>
         </h1>
 
-        <p class="max-w-3xl mx-auto text-[17px] sm:text-lg text-gray-400 leading-relaxed mb-10">
+        <p class="max-w-2xl text-[16px] sm:text-[17px] text-[#A39A8B] leading-relaxed mb-10">
           Rekap RAB yang biasa dikerjakan 30 menit, di sini selesai dalam hitungan detik. Kerja dengan Sistem membangun <a href="#jasa" class="text-primary hover:text-primary-light transition-colors">automasi kerjaan nyata</a> untuk bisnis — sekaligus membagikan cara kerjanya lewat <a href="#edukasi" class="text-primary hover:text-primary-light transition-colors">artikel edukasi</a> dan produk digital.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <a href="#bukti" class="btn-primary group">
             Lihat Buktinya
             <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
-          <a href="https://wa.me/628388259850?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20automasi" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-500 text-white font-semibold text-[15px] hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/25">
+          <a href="https://wa.me/628388259850?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20automasi" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#1F7A4D] text-white font-semibold text-[15px] hover:bg-[#25915B] transition-colors">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.282.49 1.723.629.722.23 1.379.198 1.892.12.577-.085 1.762-.719 2.013-1.416.25-.697.25-1.293.175-1.417-.075-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.688 0 5.215 1.045 7.114 2.946a9.87 9.87 0 012.88 7.098c-.003 5.448-4.436 9.884-9.883 9.884M20.527 3.449A12.446 12.446 0 0012.007 0C5.458 0 .098 5.359.093 11.908c0 2.112.553 4.172 1.602 5.995L0 24l6.282-1.646a11.873 11.873 0 005.726 1.46h.005c6.546 0 11.906-5.359 11.911-11.908a11.84 11.84 0 00-3.397-8.457z"/></svg>
             Chat via WhatsApp
           </a>
         </div>
       </div>
 
-      <div class="mt-24 scroll-reveal" style="--delay: 0.2s">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/[0.04] rounded-2xl overflow-hidden border border-white/[0.04]">
+      <div class="mt-16 scroll-reveal" style="--delay: 0.12s">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/[0.05] rounded-lg overflow-hidden border border-white/[0.05]">
           <div class="stat-cell">
-            <div class="text-2xl sm:text-3xl font-display font-bold text-white">30 mnt → detik</div>
+            <div class="text-2xl sm:text-3xl font-display font-semibold text-[#F2EDE4]">30 mnt → detik</div>
             <div class="text-[12px] text-gray-500 mt-0.5">Rekap RAB yang Sudah Jalan</div>
           </div>
           <div class="stat-cell">
-            <div class="text-2xl sm:text-3xl font-display font-bold text-white">n8n</div>
+            <div class="text-2xl sm:text-3xl font-display font-semibold text-[#F2EDE4]">n8n</div>
             <div class="text-[12px] text-gray-500 mt-0.5">Workflow Otomatis di Server</div>
           </div>
           <div class="stat-cell">
-            <div class="text-2xl sm:text-3xl font-display font-bold text-white">Excel + PDF</div>
+            <div class="text-2xl sm:text-3xl font-display font-semibold text-[#F2EDE4]">Excel + PDF</div>
             <div class="text-[12px] text-gray-500 mt-0.5">Output Siap Kirim ke Klien</div>
           </div>
           <div class="stat-cell">
-            <div class="text-2xl sm:text-3xl font-display font-bold text-white">Gratis Cek</div>
+            <div class="text-2xl sm:text-3xl font-display font-semibold text-[#F2EDE4]">Gratis Cek</div>
             <div class="text-[12px] text-gray-500 mt-0.5">Kerjaan Kamu Bisa Diotomasi atau Tidak</div>
           </div>
         </div>
-        <div class="rounded-2xl border border-white/[0.04] bg-white/[0.02] px-5 py-4 text-left mt-5 max-w-4xl mx-auto">
-          <p class="text-sm text-gray-300 leading-relaxed">
+        <div class="border-l border-white/[0.08] bg-white/[0.02] px-5 py-4 text-left mt-5 max-w-3xl">
+          <p class="text-sm text-[#A39A8B] leading-relaxed">
             Kerja dengan Sistem dikembangkan sebagai ruang belajar untuk memahami AI, automation, workflow, dan sistem kerja yang lebih efisien — dengan arah jangka panjang menuju komunitas yang saling berbagi use case, insight, dan praktik terbaik.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark-950 to-transparent"></div>
   </section>
 
-  <section class="py-4 border-y border-white/[0.03] overflow-hidden">
-    <div class="marquee-track">
-      <div class="marquee-content">
-        <span class="marquee-item">🤖 ChatGPT</span>
-        <span class="marquee-item">🔄 n8n</span>
-        <span class="marquee-item">⚡ Zapier</span>
-        <span class="marquee-item">🔗 Make.com</span>
-        <span class="marquee-item">💬 WhatsApp API</span>
-        <span class="marquee-item">📊 Notion</span>
-        <span class="marquee-item">🎯 Airtable</span>
-        <span class="marquee-item">📈 Google Sheets</span>
-        <span class="marquee-item">🧠 Claude AI</span>
-        <span class="marquee-item">🛠 Workflow Automation</span>
-        <span class="marquee-item">🤖 ChatGPT</span>
-        <span class="marquee-item">🔄 n8n</span>
-        <span class="marquee-item">⚡ Zapier</span>
-        <span class="marquee-item">🔗 Make.com</span>
-        <span class="marquee-item">💬 WhatsApp API</span>
-        <span class="marquee-item">📊 Notion</span>
-        <span class="marquee-item">🎯 Airtable</span>
-        <span class="marquee-item">📈 Google Sheets</span>
-        <span class="marquee-item">🧠 Claude AI</span>
-        <span class="marquee-item">🛠 Workflow Automation</span>
+  <section class="py-6 border-y border-white/[0.05]">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-wrap items-baseline gap-x-8 gap-y-2 font-mono text-[13px] text-[#8B8172]">
+        <span class="text-[#6B6355]">Stack yang saya pakai tiap hari:</span>
+        <span>n8n</span><span>Google Sheets</span><span>Supabase</span><span>Telegram Bot</span><span>Excel &amp; PDF generator</span>
       </div>
     </div>
   </section>
@@ -385,7 +360,7 @@
           <a href="https://wa.me/628388259850?text=Halo%2C%20saya%20tertarik%20paket%20Sistem%20Kilat" target="_blank" rel="noopener" class="mt-6 btn-ghost text-center">Pilih Sistem Kilat</a>
         </div>
 
-        <div class="relative rounded-3xl border border-primary/40 bg-gradient-to-b from-primary/[0.08] to-transparent p-6 sm:p-7 flex flex-col scroll-reveal" style="--delay:0.1s">
+        <div class="relative rounded-xl border border-primary/35 bg-primary/[0.05] p-6 sm:p-7 flex flex-col scroll-reveal" style="--delay:0.1s">
           <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-primary text-white text-[11px] font-bold uppercase tracking-wider whitespace-nowrap">Paling Populer</div>
           <div class="section-label mb-4">Custom Build</div>
           <div class="font-display font-bold text-white text-2xl mb-1">Mulai Rp 2,5jt</div>
@@ -414,7 +389,7 @@
       </div>
 
       <div class="rounded-2xl border border-emerald-400/15 bg-emerald-400/[0.03] px-6 py-5 text-center scroll-reveal" style="--delay:0.12s">
-        <p class="text-sm text-gray-300 leading-relaxed">
+        <p class="text-sm text-[#A39A8B] leading-relaxed">
           <span class="text-emerald-400 font-semibold">Cara kerjanya simpel:</span> ceritakan pekerjaan manual Anda di WhatsApp → saya balas apakah bisa diotomasi + estimanya → baru diputuskan. Tidak ada biaya untuk tahap ini.
         </p>
       </div>
@@ -524,7 +499,7 @@
         Section ini dirancang seperti ruang belajar. Pengunjung bisa mulai dari topik paling dasar, memahami istilah dan fungsi utamanya, lalu naik ke contoh penerapan yang lebih relevan untuk pekerjaan sehari-hari.
       </p>
 
-      <div class="rounded-3xl border border-white/[0.04] bg-gradient-to-br from-white/[0.03] to-white/[0.01] p-6 sm:p-8 mb-12 scroll-reveal" style="--delay:0.12s">
+      <div class="rounded-xl border border-white/[0.05] bg-white/[0.02] p-6 sm:p-8 mb-12 scroll-reveal" style="--delay:0.12s">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <a href="/belajar/ai.html" class="rounded-2xl border border-white/[0.04] bg-black/20 p-5 block hover:bg-white/[0.04] hover:border-white/[0.08] transition-all duration-300">
             <div class="section-label mb-3">Kategori 1</div>
@@ -569,45 +544,45 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               <a class="learning-card" href="https://artikel.kerjadengansistem.web.id/artikel/revolusi-ai-generatif-2026.html" target="_blank" rel="noopener noreferrer">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 01</div><span class="learning-badge live">Baca sekarang</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Apa itu AI dan kenapa topik ini penting untuk dunia kerja modern.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Apa itu AI dan kenapa topik ini penting untuk dunia kerja modern.</p>
                 <div class="learning-link-note text-primary">Materi terkait: Revolusi AI Generatif 2026</div>
               </a>
               <a class="learning-card" href="https://artikel.kerjadengansistem.web.id/artikel/apa-itu-ai-agent-dan-kenapa-bisnis-mulai-memakainya.html" target="_blank" rel="noopener noreferrer">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 02</div><span class="learning-badge live">Baca sekarang</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Perbedaan AI generatif, chatbot, AI agent, dan automation sederhana.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Perbedaan AI generatif, chatbot, AI agent, dan automation sederhana.</p>
                 <div class="learning-link-note text-primary">Materi terkait: AI Agent untuk Bisnis</div>
               </a>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 03</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara membuat prompt yang baik dan benar agar hasil AI lebih relevan.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara membuat prompt yang baik dan benar agar hasil AI lebih relevan.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 04</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Kesalahan umum saat memakai AI dan cara menghindari output yang ngawur.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Kesalahan umum saat memakai AI dan cara menghindari output yang ngawur.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 05</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Rekomendasi AI untuk membuat konten, riset, ringkasan, dan ide awal.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Rekomendasi AI untuk membuat konten, riset, ringkasan, dan ide awal.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 06</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Perbedaan AI A dan AI B dalam hal kecepatan, akurasi, dan gaya jawaban.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Perbedaan AI A dan AI B dalam hal kecepatan, akurasi, dan gaya jawaban.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 07</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Kapan AI cocok dipakai untuk kerja harian, dan kapan tetap perlu pengecekan manual.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Kapan AI cocok dipakai untuk kerja harian, dan kapan tetap perlu pengecekan manual.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 08</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara memakai AI untuk bantu menulis email, laporan, caption, dan materi presentasi.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara memakai AI untuk bantu menulis email, laporan, caption, dan materi presentasi.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 09</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Privasi, keamanan data, dan hal-hal yang tidak sebaiknya langsung diberikan ke AI.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Privasi, keamanan data, dan hal-hal yang tidak sebaiknya langsung diberikan ke AI.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-primary font-semibold">Pelajaran 10</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Langkah belajar AI untuk pemula agar tidak bingung dan tidak lompat-lompat topik.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Langkah belajar AI untuk pemula agar tidak bingung dan tidak lompat-lompat topik.</p>
               </div>
             </div>
           </div>
@@ -625,44 +600,44 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               <a class="learning-card" href="https://artikel.kerjadengansistem.web.id/artikel/apa-itu-ai-agent-dan-kenapa-bisnis-mulai-memakainya.html" target="_blank" rel="noopener noreferrer">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 01</div><span class="learning-badge live">Baca sekarang</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Apa itu OpenClaw dan bagaimana perannya sebagai AI agent assistant.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Apa itu OpenClaw dan bagaimana perannya sebagai AI agent assistant.</p>
                 <div class="learning-link-note text-accent-light">Materi terkait: AI Agent untuk Bisnis</div>
               </a>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 02</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Apa bedanya OpenClaw dengan chatbot AI biasa.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Apa bedanya OpenClaw dengan chatbot AI biasa.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 03</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara install OpenClaw dan kebutuhan dasar yang perlu disiapkan.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara install OpenClaw dan kebutuhan dasar yang perlu disiapkan.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 04</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara menghubungkan OpenClaw dengan channel komunikasi seperti Telegram atau web.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara menghubungkan OpenClaw dengan channel komunikasi seperti Telegram atau web.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 05</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Fungsi tools, memory, dan session dalam cara kerja OpenClaw.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Fungsi tools, memory, dan session dalam cara kerja OpenClaw.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 06</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Use case OpenClaw untuk personal assistant, monitoring, dan automasi kerja digital.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Use case OpenClaw untuk personal assistant, monitoring, dan automasi kerja digital.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 07</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara memberi instruksi yang jelas agar agent bekerja lebih tepat.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara memberi instruksi yang jelas agar agent bekerja lebih tepat.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 08</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara menyimpan konteks dan membangun kebiasaan kerja agent yang konsisten.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara menyimpan konteks dan membangun kebiasaan kerja agent yang konsisten.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 09</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Hal-hal yang aman dilakukan agent dan kapan tetap perlu persetujuan manusia.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Hal-hal yang aman dilakukan agent dan kapan tetap perlu persetujuan manusia.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-accent-light font-semibold">Pelajaran 10</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Contoh alur sederhana: agent menerima permintaan, memprosesnya, lalu mengirim hasil.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Contoh alur sederhana: agent menerima permintaan, memprosesnya, lalu mengirim hasil.</p>
               </div>
             </div>
           </div>
@@ -680,44 +655,44 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               <a class="learning-card" href="https://artikel.kerjadengansistem.web.id/artikel/tools-automation-yang-wajib-dikuasai-2026.html" target="_blank" rel="noopener noreferrer">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 01</div><span class="learning-badge live">Baca sekarang</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Apa itu n8n dan kenapa tool ini sering dipakai untuk workflow automation.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Apa itu n8n dan kenapa tool ini sering dipakai untuk workflow automation.</p>
                 <div class="learning-link-note text-emerald-300">Materi terkait: Tools Automation 2026</div>
               </a>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 02</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara install n8n dan pilihan memakai cloud atau self-hosted.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara install n8n dan pilihan memakai cloud atau self-hosted.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 03</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Apa itu workflow, node, trigger, dan execution di n8n.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Apa itu workflow, node, trigger, dan execution di n8n.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 04</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Fitur dasar yang ada di n8n dan fungsi masing-masing bagian utamanya.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Fitur dasar yang ada di n8n dan fungsi masing-masing bagian utamanya.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 05</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">n8n bisa dipakai untuk apa saja dalam operasional bisnis, konten, dan administrasi.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">n8n bisa dipakai untuk apa saja dalam operasional bisnis, konten, dan administrasi.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 06</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara menghubungkan n8n dengan Google Sheets, WhatsApp, email, dan API.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara menghubungkan n8n dengan Google Sheets, WhatsApp, email, dan API.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 07</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Cara membaca data masuk dan mengolahnya sebelum dikirim ke langkah berikutnya.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Cara membaca data masuk dan mengolahnya sebelum dikirim ke langkah berikutnya.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 08</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Perbedaan automation sederhana, multi-step workflow, dan workflow berbasis AI di n8n.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Perbedaan automation sederhana, multi-step workflow, dan workflow berbasis AI di n8n.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 09</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Kesalahan umum pemula saat membuat workflow dan cara debugging yang lebih mudah.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Kesalahan umum pemula saat membuat workflow dan cara debugging yang lebih mudah.</p>
               </div>
               <div class="learning-card is-disabled">
                 <div class="learning-card-title"><div class="text-xs text-emerald-300 font-semibold">Pelajaran 10</div><span class="learning-badge soon">Segera hadir</span></div>
-                <p class="text-sm text-gray-300 leading-relaxed">Contoh use case dasar n8n untuk rekap data, notifikasi otomatis, dan sinkronisasi proses kerja.</p>
+                <p class="text-sm text-[#A39A8B] leading-relaxed">Contoh use case dasar n8n untuk rekap data, notifikasi otomatis, dan sinkronisasi proses kerja.</p>
               </div>
             </div>
           </div>
@@ -845,15 +820,15 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
             <div class="rounded-2xl border border-white/[0.04] bg-black/20 p-4">
               <div class="text-[11px] uppercase tracking-[0.18em] text-primary font-semibold mb-2">1</div>
-              <p class="text-sm text-gray-300 leading-relaxed">Isi nama dan nomor WhatsApp aktif.</p>
+              <p class="text-sm text-[#A39A8B] leading-relaxed">Isi nama dan nomor WhatsApp aktif.</p>
             </div>
             <div class="rounded-2xl border border-white/[0.04] bg-black/20 p-4">
               <div class="text-[11px] uppercase tracking-[0.18em] text-accent-light font-semibold mb-2">2</div>
-              <p class="text-sm text-gray-300 leading-relaxed">Jelaskan proses kerja yang masih manual atau terasa repetitif.</p>
+              <p class="text-sm text-[#A39A8B] leading-relaxed">Jelaskan proses kerja yang masih manual atau terasa repetitif.</p>
             </div>
             <div class="rounded-2xl border border-white/[0.04] bg-black/20 p-4">
               <div class="text-[11px] uppercase tracking-[0.18em] text-emerald-400 font-semibold mb-2">3</div>
-              <p class="text-sm text-gray-300 leading-relaxed">Kirim form untuk mulai mengecek potensi automation-nya.</p>
+              <p class="text-sm text-[#A39A8B] leading-relaxed">Kirim form untuk mulai mengecek potensi automation-nya.</p>
             </div>
           </div>
           <div class="flex flex-col sm:flex-row gap-3">
@@ -871,8 +846,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
         <div class="lg:col-span-2">
           <a href="#" class="flex items-center gap-2.5 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <div class="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
+              <svg class="w-4 h-4 text-[#1A1814]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
             <span class="font-display font-bold text-[15px] text-white tracking-tight">Kerja<span class="text-primary">dengan</span>Sistem</span>
           </a>

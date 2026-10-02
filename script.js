@@ -13,14 +13,14 @@ const ICON_MAP = {
   grafik: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
 };
 const COLOR_MAP = {
-  biru:   { bg: 'from-sky-500/15 to-indigo-500/15',   text: 'text-sky-400',     tagBg: 'bg-sky-500/8',     badgeBg: 'bg-sky-500/80' },
-  ungu:   { bg: 'from-violet-500/15 to-pink-500/15',   text: 'text-violet-400',  tagBg: 'bg-violet-500/8',  badgeBg: 'bg-violet-500/80' },
-  hijau:  { bg: 'from-emerald-500/15 to-teal-500/15',  text: 'text-emerald-400', tagBg: 'bg-emerald-500/8', badgeBg: 'bg-emerald-500/80' },
-  kuning: { bg: 'from-amber-500/15 to-orange-500/15',  text: 'text-amber-400',   tagBg: 'bg-amber-500/8',   badgeBg: 'bg-amber-500/80' },
-  merah:  { bg: 'from-red-500/15 to-rose-500/15',      text: 'text-red-400',     tagBg: 'bg-red-500/8',     badgeBg: 'bg-red-500/80' },
-  cyan:   { bg: 'from-cyan-500/15 to-blue-500/15',     text: 'text-cyan-400',    tagBg: 'bg-cyan-500/8',    badgeBg: 'bg-cyan-500/80' },
-  pink:   { bg: 'from-pink-500/15 to-rose-500/15',     text: 'text-pink-400',    tagBg: 'bg-pink-500/8',    badgeBg: 'bg-pink-500/80' },
-  oranye: { bg: 'from-orange-500/15 to-amber-500/15',  text: 'text-orange-400',  tagBg: 'bg-orange-500/8',  badgeBg: 'bg-orange-500/80' },
+  biru:   { bg: '', text: 'text-[#E3A23C]', tagBg: 'bg-[#E3A23C]/10',  badgeBg: 'bg-[#B96A28]' },
+  ungu:   { bg: '', text: 'text-[#B0A695]', tagBg: 'bg-[#B0A695]/10',  badgeBg: 'bg-[#6B6355]' },
+  hijau:  { bg: '', text: 'text-[#9AA88D]', tagBg: 'bg-[#9AA88D]/10',  badgeBg: 'bg-[#4F5A46]' },
+  kuning: { bg: '', text: 'text-[#E3A23C]', tagBg: 'bg-[#E3A23C]/10',  badgeBg: 'bg-[#B96A28]' },
+  merah:  { bg: '', text: 'text-[#C97B5D]', tagBg: 'bg-[#C97B5D]/10',  badgeBg: 'bg-[#8F4E35]' },
+  cyan:   { bg: '', text: 'text-[#E3A23C]', tagBg: 'bg-[#E3A23C]/10',  badgeBg: 'bg-[#B96A28]' },
+  pink:   { bg: '', text: 'text-[#C97B5D]', tagBg: 'bg-[#C97B5D]/10',  badgeBg: 'bg-[#8F4E35]' },
+  oranye: { bg: '', text: 'text-[#E3A23C]', tagBg: 'bg-[#E3A23C]/10',  badgeBg: 'bg-[#B96A28]' },
 };
 function getIcon(n) { return ICON_MAP[n] || ICON_MAP.petir; }
 function getColor(n) { return COLOR_MAP[n] || COLOR_MAP.biru; }
@@ -43,7 +43,7 @@ function renderProducts() {
       <div class="relative overflow-hidden">
         ${p.gambar
           ? `<div class="aspect-[16/10] overflow-hidden"><img src="${p.gambar}" alt="${p.nama}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" /></div>`
-          : `<div class="aspect-[16/10] bg-gradient-to-br ${c.bg} flex items-center justify-center"><svg class="w-14 h-14 ${c.text} opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">${getIcon(p.ikon)}</svg></div>`
+          : `<div class="aspect-[16/10] bg-[#211F19] border-b border-white/[0.05] flex items-center justify-center"><svg class="w-14 h-14 ${c.text} opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">${getIcon(p.ikon)}</svg></div>`
         }
         ${p.badge ? `<span class="absolute top-3 right-3 px-2.5 py-1 rounded-md ${free ? 'bg-emerald-500/80' : c.badgeBg} text-white text-[10px] font-bold tracking-wide backdrop-blur-sm">${p.badge}</span>` : ''}
       </div>
@@ -84,7 +84,7 @@ function renderArticles() {
       <a href="${a.link}" target="_blank" rel="noopener" class="block">
         ${a.gambar
           ? `<div class="aspect-[16/10] rounded-xl mb-3 overflow-hidden"><img src="${a.gambar}" alt="${a.judul}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" /></div>`
-          : `<div class="aspect-[16/10] bg-gradient-to-br ${c.bg} rounded-xl mb-3 flex items-center justify-center"><svg class="w-10 h-10 ${c.text} opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">${getIcon(a.ikon)}</svg></div>`
+          : `<div class="aspect-[16/10] bg-[#211F19] rounded-md mb-3 border border-white/[0.05] flex items-center justify-center"><svg class="w-10 h-10 ${c.text} opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">${getIcon(a.ikon)}</svg></div>`
         }
         <div class="flex items-center gap-2 mb-2">
           <span class="text-[11px] font-semibold ${c.text} ${c.tagBg} px-2 py-0.5 rounded-md">${a.kategori}</span>
@@ -237,7 +237,7 @@ if (nlForm) {
     const btn = nlForm.querySelector('button');
     const orig = btn.innerHTML;
     btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Berhasil!';
-    btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+    btn.style.background = '#1F7A4D'; btn.style.color = '#F2EDE4';
     const input = nlForm.querySelector('input');
     if (input) input.value = '';
     setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 3000);
