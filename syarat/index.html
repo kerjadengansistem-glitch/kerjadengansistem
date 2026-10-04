@@ -119,7 +119,7 @@
           <h3>Kontak</h3>
           <ul>
             <li><a href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20bawah%29.%20Mau%20tanya%20soal%20automasi%20kerjaan%20saya." data-ev="klik_wa" data-asal="footer" target="_blank" rel="noopener">WhatsApp 0838-8259-850</a></li>
-            <li><a href="https://demo.kerjadengansistem.web.id" data-ev="klik_demo" data-asal="footer" target="_blank" rel="noopener">Demo</a></li>
+            <li><a href="/demo" data-ev="klik_demo" data-asal="footer" data-pilih-demo>Demo</a></li>
             <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
             <li><a href="/syarat">Syarat</a></li>
           </ul>
@@ -128,6 +128,36 @@
       <p class="hak">© 2026 Kerja dengan Sistem. Semua contoh di situs ini memakai data fiktif.</p>
     </div>
   </footer>
+  <dialog class="dialog-demo" id="pilih-demo" aria-labelledby="pilih-demo-judul">
+    <div class="dialog-isi">
+      <div class="dialog-atas">
+        <h2 id="pilih-demo-judul">Pilih demo yang mau dicoba</h2>
+        <button class="dialog-tutup" type="button" aria-label="Tutup pilihan demo"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+      </div>
+      <p class="dialog-sub">Semua demo memakai data fiktif.</p>
+      <ul class="pilihan">
+          <li>
+            <a class="pilih" href="/demo/rapikan" data-ev="pilih_demo" data-asal="sederhana">
+              <span class="pilih-ikon"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M3 9h18" /><path d="M9 3v18" /><rect x="3" y="3" rx="2" /></svg></span>
+              <span class="pilih-tingkat">Demo sederhana</span>
+              <strong>Rapikan: ketikan jadi Excel</strong>
+              <span class="pilih-isi">Tempel daftar ketikan, jadi tabel yang bisa dicek lalu diunduh sebagai Excel. Bisa juga sebaliknya, dari Excel jadi teks laporan.</span>
+              <span class="pilih-buka">Coba sekarang<svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="pilih" href="https://demo.kerjadengansistem.web.id" data-ev="pilih_demo" data-asal="sedang" target="_blank" rel="noopener">
+              <span class="pilih-ikon"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span>
+              <span class="pilih-tingkat">Demo sedang</span>
+              <strong>Rekap RAB dan invoice</strong>
+              <span class="pilih-isi">Isi form, sistem menyusun Excel rekap RAB lengkap dengan rumusnya dan PDF invoice dalam sekali jalan.</span>
+              <span class="pilih-buka">Coba sekarang<svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span>
+            </a>
+          </li>
+        </ul>
+
+    </div>
+  </dialog>
   <script src="/site.js" defer></script>
 
 </body>

@@ -31,7 +31,7 @@
           <h3>Kontak</h3>
           <ul>
             <li><a {{wa:footer|Halo, saya dari website (bagian bawah). Mau tanya soal automasi kerjaan saya.}}>WhatsApp 0838-8259-850</a></li>
-            <li><a href="{{taut:demo}}" data-ev="klik_demo" data-asal="footer" target="_blank" rel="noopener">Demo</a></li>
+            <li><a href="{{taut:demo}}" data-ev="klik_demo" data-asal="footer" data-pilih-demo>Demo</a></li>
             <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
             <li><a href="/syarat">Syarat</a></li>
           </ul>
@@ -40,4 +40,14 @@
       <p class="hak">© 2026 Kerja dengan Sistem. Semua contoh di situs ini memakai data fiktif.</p>
     </div>
   </footer>
+  <dialog class="dialog-demo" id="pilih-demo" aria-labelledby="pilih-demo-judul">
+    <div class="dialog-isi">
+      <div class="dialog-atas">
+        <h2 id="pilih-demo-judul">Pilih demo yang mau dicoba</h2>
+        <button class="dialog-tutup" type="button" aria-label="Tutup pilihan demo">{{ikon:x}}</button>
+      </div>
+      <p class="dialog-sub">Semua demo memakai data fiktif.</p>
+      {{bagian:pilihan-demo.html}}
+    </div>
+  </dialog>
   <script src="/site.js" defer></script>

@@ -15,7 +15,9 @@ TAUT = {
     "facebook": "https://www.facebook.com/profile.php?id=61588153064812",
     "youtube": "https://www.youtube.com/@KerjaDengansistem",
     "threads": "https://www.threads.com/@kerjadengansistem",
-    "demo": "https://demo.kerjadengansistem.web.id",
+    "demo": "/demo",
+    "demo_rapikan": "/demo/rapikan",
+    "demo_rab": "https://demo.kerjadengansistem.web.id",
 }
 IKON = SRC / "ikon"
 
@@ -33,7 +35,8 @@ def wa(m):
 
 def rakit(nama, keluar):
     s = (SRC / nama).read_text()
-    s = re.sub(r"\{\{bagian:([\w.-]+)\}\}", lambda m: (SRC / m.group(1)).read_text(), s)
+    for _ in range(3):  # bagian boleh memuat bagian lain
+        s = re.sub(r"\{\{bagian:([\w.-]+)\}\}", lambda m: (SRC / m.group(1)).read_text(), s)
     s = re.sub(r"\{\{ikon:([\w-]+)\}\}", ikon, s)
     s = re.sub(r"\{\{wa:([\w-]+)\|([^}]+)\}\}", wa, s)
     s = re.sub(r"\{\{taut:(\w+)\}\}", lambda m: TAUT[m.group(1)], s)
@@ -47,3 +50,4 @@ def rakit(nama, keluar):
 rakit("index.html", "index.html")
 rakit("kebijakan-privasi.html", "kebijakan-privasi/index.html")
 rakit("syarat.html", "syarat/index.html")
+rakit("demo.html", "demo/index.html")

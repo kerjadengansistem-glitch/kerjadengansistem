@@ -301,6 +301,49 @@ h3 { font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
 .legal ul { list-style: disc; padding-left: 22px; display: grid; gap: 6px; margin-top: 8px; }
 .legal .kotak { margin-top: 30px; padding: 16px 18px; background: var(--kertas); border: var(--garis); border-radius: 12px; }
 
+/* Pilihan demo: dialog dan halaman /demo */
+.pilihan { display: grid; gap: 16px; margin-top: 22px; }
+.pilih {
+  display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; height: 100%; align-content: start; align-items: center;
+  padding: 16px; background: var(--kertas); border: var(--garis); border-radius: var(--r);
+  box-shadow: var(--bayang); text-decoration: none; color: var(--tinta);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.pilih:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--tinta); }
+.pilih:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--tinta); }
+.pilih-ikon {
+  display: grid; place-items: center; width: 40px; height: 40px;
+  background: var(--hijau); border: var(--garis); border-radius: 10px;
+}
+.pilih-ikon .ikon { width: 22px; height: 22px; }
+.pilih > :not(.pilih-ikon):not(.pilih-tingkat) { grid-column: 1 / -1; }
+.pilih-tingkat { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--hijau-teks); }
+.pilih strong { font-size: 1.2rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1.2; }
+.pilih-isi { color: var(--tinta-2); font-size: .97rem; }
+.pilih-buka { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-weight: 700; }
+.pilih-buka .ikon { width: 18px; height: 18px; }
+
+.dialog-demo {
+  width: min(760px, calc(100vw - 24px)); max-height: calc(100dvh - 24px);
+  padding: 0; border: var(--garis); border-radius: 18px;
+  background: var(--krem); color: var(--tinta); box-shadow: 8px 8px 0 var(--tinta);
+  overflow: auto;
+}
+.dialog-demo::backdrop { background: rgba(11, 11, 12, .55); }
+.dialog-isi { padding: 18px; }
+.dialog-atas { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.dialog-atas h2 { font-size: clamp(1.4rem, 5vw, 1.9rem); }
+.dialog-sub { margin-top: 8px; color: var(--tinta-2); font-size: .97rem; }
+.dialog-tutup {
+  flex: none; display: grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  background: var(--kertas); color: var(--tinta); border: var(--garis); border-radius: 10px; cursor: pointer;
+}
+.dialog-tutup .ikon { width: 20px; height: 20px; }
+.demo-hal { padding: 40px 0 64px; }
+.demo-hal .wadah { max-width: 880px; }
+.demo-hal h1 { font-size: clamp(2rem, 7vw, 3rem); }
+.demo-hal .aksi { margin-top: 28px; }
+
 @media (max-width: 559px) {
   .kepala .wadah { gap: 8px; padding: 0 14px; }
   .merek { gap: 8px; }
@@ -318,6 +361,10 @@ h3 { font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
 }
 
 @media (min-width: 760px) {
+  .pilihan { grid-template-columns: 1fr 1fr; }
+  .pilih { padding: 20px; }
+  .dialog-isi { padding: 28px; }
+  .demo-hal .aksi { display: flex; }
   body { font-size: 18px; }
   .wadah { padding: 0 32px; }
   .bagian { padding: 92px 0; }

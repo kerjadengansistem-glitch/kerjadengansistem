@@ -23,6 +23,22 @@
     });
   }
 
+  // Pilihan demo: tombol "Coba demo dulu" membuka dua pilihan.
+  // Tanpa skrip (atau peramban lama), tautannya tetap menuju halaman /demo.
+  var dlg = document.getElementById("pilih-demo");
+  if (dlg && typeof dlg.showModal === "function" && !document.body.classList.contains("hal-demo")) {
+    document.addEventListener("click", function (e) {
+      var pemicu = e.target.closest && e.target.closest("[data-pilih-demo]");
+      if (pemicu && !e.metaKey && !e.ctrlKey && !e.shiftKey && e.button === 0) {
+        e.preventDefault();
+        if (!dlg.open) dlg.showModal();
+        return;
+      }
+      if (!dlg.open) return;
+      if (e.target === dlg || e.target.closest(".dialog-tutup") || e.target.closest(".pilih")) dlg.close();
+    });
+  }
+
   // Asal kunjungan dari tautan bio (utm_source), hanya huruf, angka, garis.
   var sumber = "";
   try {
