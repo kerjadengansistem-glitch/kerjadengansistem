@@ -40,11 +40,11 @@
           "availableLanguage": "Indonesian"
         },
         "sameAs": [
-          "https://www.tiktok.com/@kerja.dengan.sist",
-          "https://www.instagram.com/kerjadengansistem/",
-          "https://www.facebook.com/profile.php?id=61588153064812",
-          "https://www.threads.com/@kerjadengansistem",
-          "https://www.youtube.com/@KerjaDengansistem"
+          "{{taut:tiktok}}",
+          "{{taut:instagram}}",
+          "{{taut:facebook}}",
+          "{{taut:threads}}",
+          "{{taut:youtube}}"
         ]
       },
       {
@@ -64,34 +64,7 @@
   </script>
 </head>
 <body>
-  <a class="lewati" href="#isi">Langsung ke isi</a>
-  <header class="kepala">
-    <div class="wadah">
-      <a class="merek" href="/" aria-label="Kerja dengan Sistem, ke beranda">
-        <img src="/assets/logo.svg" alt="" width="36" height="36" />
-        <span>kerja dengan sistem</span>
-      </a>
-      <nav class="menu" aria-label="Menu utama">
-        <a href="/#bukti">Bukti</a>
-        <a href="/#layanan">Layanan</a>
-        <a href="/#cara-kerja">Cara kerja</a>
-        <a href="/#tanya-jawab">Tanya jawab</a>
-      </nav>
-      <a class="tbl tbl-utama tbl-kecil" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28menu%20atas%29.%20Mau%20tanya%20soal%20automasi%20kerjaan%20saya." data-ev="klik_wa" data-asal="header" target="_blank" rel="noopener">
-        <svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg><span class="wa-pendek">WhatsApp</span><span class="wa-panjang">Chat WhatsApp</span>
-      </a>
-      <button class="tbl-menu" type="button" aria-expanded="false" aria-controls="menu-hp" aria-label="Buka menu">
-        <span class="buka"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg></span><span class="tutup"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></span>
-      </button>
-    </div>
-    <nav class="menu-hp" id="menu-hp" aria-label="Menu utama">
-      <a href="/#bukti">Bukti</a>
-      <a href="/#layanan">Layanan</a>
-      <a href="/#cara-kerja">Cara kerja</a>
-      <a href="/#tanya-jawab">Tanya jawab</a>
-    </nav>
-  </header>
-
+{{bagian:kepala.html}}
   <main id="isi">
 
     <!-- 1. Hero -->
@@ -101,20 +74,20 @@
           <h1>Kerjaan yang sama tiap minggu? <span class="tanda">Biar jadi sendiri.</span></h1>
           <p class="sub">Kami buatkan sistem yang mengerjakan rekap, invoice, dan laporanmu. File masuk, hasilnya jadi Excel atau PDF, formatnya ikut yang sudah kamu pakai.</p>
           <div class="aksi">
-            <a class="tbl tbl-utama" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20atas%29.%20Mau%20cerita%20soal%20kerjaan%20yang%20ingin%20saya%20otomasi." data-ev="klik_wa" data-asal="hero" target="_blank" rel="noopener"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>Ceritakan kerjaanmu di WhatsApp</a>
-            <a class="tbl tbl-kedua" href="https://demo.kerjadengansistem.web.id" data-ev="klik_demo" data-asal="hero" target="_blank" rel="noopener"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg>Coba demo dulu</a>
+            <a class="tbl tbl-utama" {{wa:hero|Halo, saya dari website (bagian atas). Mau cerita soal kerjaan yang ingin saya otomasi.}}>{{ikon:message-circle}}Ceritakan kerjaanmu di WhatsApp</a>
+            <a class="tbl tbl-kedua" href="{{taut:demo}}" data-ev="klik_demo" data-asal="hero" target="_blank" rel="noopener">{{ikon:play}}Coba demo dulu</a>
           </div>
           <ul class="penanda">
-            <li><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Tanpa uang muka, bayar setelah lihat demo</li>
-            <li><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Demo bisa dicoba sendiri</li>
-            <li><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Mulai Rp199rb</li>
+            <li>{{ikon:check}}Tanpa uang muka, bayar setelah lihat demo</li>
+            <li>{{ikon:check}}Demo bisa dicoba sendiri</li>
+            <li>{{ikon:check}}Mulai Rp199rb</li>
           </ul>
         </div>
 
         <figure class="layar" aria-label="Contoh alur: file masuk, rekap terisi sendiri, hasil jadi Excel dan PDF. Semua angka adalah data contoh.">
           <div class="layar-atas"><span class="titik"></span><span class="titik"></span><span class="titik"></span><span>Rekap RAB</span><span class="cap">DATA CONTOH</span></div>
           <div class="layar-isi">
-            <div class="unggah"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 3v12" /><path d="m17 8-5-5-5 5" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /></svg><div>File masuk<small>pembelian-harian.xlsx</small></div></div>
+            <div class="unggah">{{ikon:upload}}<div>File masuk<small>pembelian-harian.xlsx</small></div></div>
             <table class="lembar">
               <thead><tr><th>Barang</th><th>Jml</th><th>Total</th></tr></thead>
               <tbody>
@@ -125,8 +98,8 @@
               <tfoot><tr><td colspan="2">Total terhitung sendiri</td><td>5.300.000</td></tr></tfoot>
             </table>
             <div class="hasil">
-              <span class="berkas"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M8 13h2" /><path d="M14 13h2" /><path d="M8 17h2" /><path d="M14 17h2" /></svg>rekap-rab.xlsx</span>
-              <span class="berkas"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>invoice.pdf</span>
+              <span class="berkas">{{ikon:file-spreadsheet}}rekap-rab.xlsx</span>
+              <span class="berkas">{{ikon:file-text}}invoice.pdf</span>
             </div>
             <p class="layar-kaki">Format hasilnya sama dengan template Excel yang sudah dipakai.</p>
           </div>
@@ -164,7 +137,7 @@
         <p class="kutip"><strong>Format mengikuti template Excel yang sudah dipakai.</strong> Jadi tidak perlu adaptasi ulang. Rumus dihitung sistem, bukan diketik ulang.</p>
 
         <div class="aksi">
-          <a class="tbl tbl-utama" href="https://demo.kerjadengansistem.web.id" data-ev="klik_demo" data-asal="bukti" target="_blank" rel="noopener"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg>Coba demo langsung</a>
+          <a class="tbl tbl-utama" href="{{taut:demo}}" data-ev="klik_demo" data-asal="bukti" target="_blank" rel="noopener">{{ikon:play}}Coba demo langsung</a>
         </div>
         <p class="catatan">Data klien pada studi kasus ini disamarkan. Demo memakai data fiktif.</p>
         <!-- Tempat testimoni. Isi hanya dengan testimoni asli yang sudah diizinkan pemiliknya (PRD bab 7). -->
@@ -205,25 +178,25 @@
         <p class="pengantar">Kamu tidak perlu merakit apa pun. Kami buatkan sampai jadi, kamu tinggal pakai hasilnya.</p>
         <div class="kisi kisi-4">
           <article class="kartu">
-            <span class="lencana"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M3 9h18" /><path d="M9 3v18" /><rect x="3" y="3" rx="2" /></svg></span>
+            <span class="lencana">{{ikon:table-2}}</span>
             <h3>Rekap otomatis</h3>
             <p>Data dicatat sekali, rekapnya terisi sendiri.</p>
             <p class="contoh"><b>Contoh:</b> rekap penjualan harian, mingguan, bulanan.</p>
           </article>
           <article class="kartu">
-            <span class="lencana"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 17V7" /><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /></svg></span>
+            <span class="lencana">{{ikon:receipt}}</span>
             <h3>Invoice PDF</h3>
             <p>Invoice jadi dari data yang sudah ada, tanpa ketik ulang.</p>
             <p class="contoh"><b>Contoh:</b> satu baris data jadi satu invoice siap kirim.</p>
           </article>
           <article class="kartu">
-            <span class="lencana"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg></span>
+            <span class="lencana">{{ikon:chart-column}}</span>
             <h3>Laporan rutin</h3>
             <p>Laporan yang sama tiap periode disusun sendiri.</p>
             <p class="contoh"><b>Contoh:</b> laporan harian dengan format yang sama persis.</p>
           </article>
           <article class="kartu">
-            <span class="lencana"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span>
+            <span class="lencana">{{ikon:clipboard-list}}</span>
             <h3>Form → rekap</h3>
             <p>Isi form, datanya langsung masuk dan terhitung.</p>
             <p class="contoh"><b>Contoh:</b> form pembelian yang jadi rekap RAB.</p>
@@ -244,8 +217,8 @@
           <li class="kartu"><h3>Cocok? Baru bayar</h3><p>Sistem jalan, dan kamu dapat panduan pakainya.</p></li>
         </ol>
         <div class="info-baris">
-          <div><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg><span><b>Perkiraan jadi:</b> 1–3 jam untuk yang sederhana, sampai 1–3 hari untuk yang kompleks.</span></div>
-          <div><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg><span><b>Garansi 30 hari</b> sejak transaksi, untuk semua tingkat.</span></div>
+          <div>{{ikon:clock}}<span><b>Perkiraan jadi:</b> 1–3 jam untuk yang sederhana, sampai 1–3 hari untuk yang kompleks.</span></div>
+          <div>{{ikon:shield-check}}<span><b>Garansi 30 hari</b> sejak transaksi, untuk semua tingkat.</span></div>
         </div>
       </div>
     </section>
@@ -265,7 +238,7 @@
               <div><dt>Perkiraan jadi</dt><dd>1–3 jam</dd></div>
               <div><dt>Garansi</dt><dd>30 hari</dd></div>
             </dl>
-            <a class="tbl tbl-kedua tbl-lebar" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20harga%29.%20Saya%20punya%20kerjaan%20sederhana%20yang%20ingin%20diotomasi." data-ev="klik_wa" data-asal="harga-sederhana" target="_blank" rel="noopener">Tanya yang sederhana</a>
+            <a class="tbl tbl-kedua tbl-lebar" {{wa:harga-sederhana|Halo, saya dari website (bagian harga). Saya punya kerjaan sederhana yang ingin diotomasi.}}>Tanya yang sederhana</a>
           </article>
           <article class="kartu">
             <span class="tingkat">Sedang</span>
@@ -275,7 +248,7 @@
               <div><dt>Perkiraan jadi</dt><dd>6–12 jam</dd></div>
               <div><dt>Garansi</dt><dd>30 hari</dd></div>
             </dl>
-            <a class="tbl tbl-kedua tbl-lebar" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20harga%29.%20Kerjaan%20saya%20melibatkan%20beberapa%20file%20atau%20beberapa%20hasil." data-ev="klik_wa" data-asal="harga-sedang" target="_blank" rel="noopener">Tanya yang sedang</a>
+            <a class="tbl tbl-kedua tbl-lebar" {{wa:harga-sedang|Halo, saya dari website (bagian harga). Kerjaan saya melibatkan beberapa file atau beberapa hasil.}}>Tanya yang sedang</a>
           </article>
           <article class="kartu">
             <span class="tingkat">Kompleks</span>
@@ -285,13 +258,13 @@
               <div><dt>Perkiraan jadi</dt><dd>1–3 hari</dd></div>
               <div><dt>Garansi</dt><dd>30 hari</dd></div>
             </dl>
-            <a class="tbl tbl-kedua tbl-lebar" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20harga%29.%20Saya%20ingin%20sistem%20yang%20tersambung%20ke%20WhatsApp%2C%20marketplace%2C%20atau%20kasir." data-ev="klik_wa" data-asal="harga-kompleks" target="_blank" rel="noopener">Bicarakan yang kompleks</a>
+            <a class="tbl tbl-kedua tbl-lebar" {{wa:harga-kompleks|Halo, saya dari website (bagian harga). Saya ingin sistem yang tersambung ke WhatsApp, marketplace, atau kasir.}}>Bicarakan yang kompleks</a>
           </article>
         </div>
         <div class="bawah-harga">
           <p><b>Harga akhir ditentukan setelah kami paham kerjaanmu.</b> Kamu dapat penawaran tertulis, harganya tetap, dan tidak berubah di tengah jalan.</p>
           <p>Perkiraan jadi dihitung sejak kerjaanmu jelas dan datanya kami terima. Tambahan fitur di luar yang disepakati: Rp100rb per fitur.</p>
-          <p>Bingung pilih yang mana? <a class="taut" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20harga%29.%20Saya%20belum%20tahu%20kerjaan%20saya%20masuk%20tingkat%20yang%20mana." data-ev="klik_wa" data-asal="harga-bingung" target="_blank" rel="noopener">Ceritakan saja, kami sarankan.</a></p>
+          <p>Bingung pilih yang mana? <a class="taut" {{wa:harga-bingung|Halo, saya dari website (bagian harga). Saya belum tahu kerjaan saya masuk tingkat yang mana.}}>Ceritakan saja, kami sarankan.</a></p>
         </div>
       </div>
     </section>
@@ -306,7 +279,7 @@
             <p>Template Google Sheets. Catat sekali, rekap harian, mingguan, dan bulanan terisi sendiri.</p>
           </div>
           <div>
-            <a class="tbl tbl-lebar" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website.%20Mau%20template%20Rekap%20Otomatis." data-ev="klik_wa" data-asal="tools" target="_blank" rel="noopener"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>Minta template lewat WhatsApp</a>
+            <a class="tbl tbl-lebar" {{wa:tools|Halo, saya dari website. Mau template Rekap Otomatis.}}>{{ikon:message-circle}}Minta template lewat WhatsApp</a>
             <p class="batas">Template ini merekap data yang kamu ketik sendiri. Kalau datanya ingin masuk otomatis dari WhatsApp, marketplace, atau kasir, itu masuk jasa kami.</p>
           </div>
         </div>
@@ -323,13 +296,13 @@
         <div>
           <p>Kerja dengan Sistem dikerjakan oleh seorang spesialis AI agent, yaitu orang yang pekerjaannya merakit sistem supaya tugas berulang jalan sendiri.</p>
           <p>Brand ini dibangun terbuka dari nol, dan prosesnya dibantu asisten AI. Kami sampaikan itu apa adanya.</p>
-          <p>Ingin belajar membuatnya sendiri? <a class="taut" href="https://www.youtube.com/@KerjaDengansistem" target="_blank" rel="noopener">Belajar automasi di YouTube</a>.</p>
+          <p>Ingin belajar membuatnya sendiri? <a class="taut" href="{{taut:youtube}}" target="_blank" rel="noopener">Belajar automasi di YouTube</a>.</p>
           <div class="sosmed">
-            <a href="https://www.tiktok.com/@kerja.dengan.sist" target="_blank" rel="noopener">TikTok</a>
-            <a href="https://www.instagram.com/kerjadengansistem/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61588153064812" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://www.threads.com/@kerjadengansistem" target="_blank" rel="noopener">Threads</a>
-            <a href="https://www.youtube.com/@KerjaDengansistem" target="_blank" rel="noopener">YouTube</a>
+            <a href="{{taut:tiktok}}" target="_blank" rel="noopener">TikTok</a>
+            <a href="{{taut:instagram}}" target="_blank" rel="noopener">Instagram</a>
+            <a href="{{taut:facebook}}" target="_blank" rel="noopener">Facebook</a>
+            <a href="{{taut:threads}}" target="_blank" rel="noopener">Threads</a>
+            <a href="{{taut:youtube}}" target="_blank" rel="noopener">YouTube</a>
           </div>
         </div>
       </div>
@@ -361,7 +334,7 @@
           <h2>Punya kerjaan yang diulang tiap minggu?</h2>
           <p class="pengantar">Ceritakan saja. Kami balas bisa atau tidak, dan perkiraan biayanya. Biasanya kami balas kurang dari 1 jam.</p>
           <div class="aksi">
-            <a class="tbl tbl-utama" href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20penutup%29.%20Saya%20punya%20kerjaan%20yang%20diulang%20tiap%20minggu%20dan%20ingin%20diotomasi." data-ev="klik_wa" data-asal="penutup" target="_blank" rel="noopener"><svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>Ceritakan di WhatsApp</a>
+            <a class="tbl tbl-utama" {{wa:penutup|Halo, saya dari website (bagian penutup). Saya punya kerjaan yang diulang tiap minggu dan ingin diotomasi.}}>{{ikon:message-circle}}Ceritakan di WhatsApp</a>
           </div>
         </div>
         <form class="borang" id="borang" novalidate>
@@ -371,56 +344,13 @@
           <input id="b-nama" name="nama" type="text" autocomplete="name" maxlength="60" required />
           <label for="b-cerita">Ceritakan kerjaanmu</label>
           <textarea id="b-cerita" name="cerita" maxlength="600" required placeholder="Contoh: tiap Jumat saya gabungkan 3 file penjualan jadi satu rekap."></textarea>
-          <button class="tbl tbl-utama tbl-lebar" type="submit">Lanjut ke WhatsApp<svg class="ikon" aria-hidden="true" focusable="false"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></button>
+          <button class="tbl tbl-utama tbl-lebar" type="submit">Lanjut ke WhatsApp{{ikon:arrow-right}}</button>
           <p class="data">Form ini tidak menyimpan apa pun di situs kami. Lihat <a class="taut" href="/kebijakan-privasi">Kebijakan Privasi</a>.</p>
         </form>
       </div>
     </section>
 
   </main>
-  <footer class="kaki">
-    <div class="wadah">
-      <div class="kaki-kisi">
-        <div>
-          <a class="merek" href="/" aria-label="Kerja dengan Sistem, ke beranda">
-            <img src="/assets/logo.svg" alt="" width="36" height="36" loading="lazy" />
-            <span>kerja dengan sistem</span>
-          </a>
-          <p>Kami buatkan sistem yang mengerjakan kerjaan berulangmu (rekap, invoice, laporan) sampai jadi, dengan format Excel yang sudah kamu pakai.</p>
-        </div>
-        <div>
-          <h3>Halaman</h3>
-          <ul>
-            <li><a href="/#bukti">Bukti</a></li>
-            <li><a href="/#layanan">Layanan</a></li>
-            <li><a href="/#cara-kerja">Cara kerja</a></li>
-            <li><a href="/#tanya-jawab">Tanya jawab</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Ikuti</h3>
-          <ul>
-            <li><a href="https://www.tiktok.com/@kerja.dengan.sist" target="_blank" rel="noopener">TikTok</a></li>
-            <li><a href="https://www.instagram.com/kerjadengansistem/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61588153064812" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="https://www.threads.com/@kerjadengansistem" target="_blank" rel="noopener">Threads</a></li>
-            <li><a href="https://www.youtube.com/@KerjaDengansistem" target="_blank" rel="noopener">Belajar automasi di YouTube</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Kontak</h3>
-          <ul>
-            <li><a href="https://wa.me/628388259850?text=Halo%2C%20saya%20dari%20website%20%28bagian%20bawah%29.%20Mau%20tanya%20soal%20automasi%20kerjaan%20saya." data-ev="klik_wa" data-asal="footer" target="_blank" rel="noopener">WhatsApp 0838-8259-850</a></li>
-            <li><a href="https://demo.kerjadengansistem.web.id" data-ev="klik_demo" data-asal="footer" target="_blank" rel="noopener">Demo</a></li>
-            <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
-            <li><a href="/syarat">Syarat</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="hak">© 2026 Kerja dengan Sistem. Semua contoh di situs ini memakai data fiktif.</p>
-    </div>
-  </footer>
-  <script src="/site.js" defer></script>
-
+{{bagian:kaki.html}}
 </body>
 </html>
