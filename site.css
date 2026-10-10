@@ -136,7 +136,7 @@ h3 { font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
 /* Hero */
 .hero { padding: 34px 0 56px; }
 .hero-kisi { display: grid; gap: 36px; align-items: center; }
-.hero h1 .tanda { background: linear-gradient(transparent 62%, var(--hijau) 62%, var(--hijau) 92%, transparent 92%); padding: 0 .06em; }
+.hero .tanda { background: linear-gradient(transparent 62%, var(--hijau) 62%, var(--hijau) 92%, transparent 92%); padding: 0 .06em; }
 .hero .sub { margin-top: 16px; font-size: 1.08rem; color: var(--tinta-2); max-width: 54ch; }
 .aksi { display: grid; gap: 12px; margin-top: 22px; }
 .penanda { display: flex; flex-wrap: wrap; gap: 8px 10px; margin-top: 20px; }
@@ -343,6 +343,39 @@ h3 { font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
 .demo-hal .wadah { max-width: 880px; }
 .demo-hal h1 { font-size: clamp(2rem, 7vw, 3rem); }
 .demo-hal .aksi { margin-top: 28px; }
+
+/* KasirKu: produk utama */
+.hero-kasirku h1 { font-size: clamp(2.1rem, 7.6vw, 3.9rem); }
+.hero-jasa { padding-top: 24px; border-top: var(--garis); background: var(--kertas); }
+.hero-jasa .judul-hero { font-size: clamp(1.9rem, 6.2vw, 3.1rem); }
+.status-baris { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 16px; }
+.stiker-gratis {
+  display: inline-block; padding: 6px 12px; background: var(--kuning); border: var(--garis); border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--tinta); font-size: .86rem; font-weight: 900; letter-spacing: .12em; transform: rotate(-2deg);
+}
+.produk-utama { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-2); }
+.kk-visual { position: relative; padding: 18px 0 34px; }
+.kk-laptop img { display: block; width: 100%; height: auto; }
+.kk-hp {
+  position: absolute; right: 8px; bottom: 0; width: 27%; height: auto;
+  background: var(--kertas); border: var(--garis); border-radius: 18px; box-shadow: 4px 4px 0 var(--tinta);
+}
+.kk-ikon {
+  position: absolute; left: -6px; top: 0; width: 60px; height: 60px;
+  border: var(--garis); border-radius: 16px; box-shadow: 3px 3px 0 var(--tinta); background: var(--kertas);
+}
+.kk-gratis {
+  display: grid; gap: 16px; align-items: center; margin-top: 36px; padding: 24px;
+  background: var(--kertas); border: var(--garis); border-radius: var(--r); box-shadow: var(--bayang);
+}
+.kk-gratis .stiker-gratis { justify-self: start; }
+.kk-gratis h3 { margin-bottom: 6px; }
+.kk-gratis p { color: var(--tinta-2); font-size: .99rem; }
+@media (min-width: 760px) {
+  .kk-gratis { grid-template-columns: auto 1fr auto; gap: 24px; padding: 28px 32px; }
+  .kk-ikon { width: 72px; height: 72px; left: -14px; top: -6px; }
+  .kk-hp { right: -14px; border-radius: 22px; }
+}
 
 @media (max-width: 559px) {
   .kepala .wadah { gap: 8px; padding: 0 14px; }

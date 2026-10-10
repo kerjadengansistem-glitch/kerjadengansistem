@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kerja dengan Sistem — Jasa Automasi Rekap, Invoice &amp; Laporan untuk UMKM</title>
-  <meta name="description" content="Kerjaan yang diulang tiap minggu kami buat jadi otomatis. Rekap, invoice, laporan jadi Excel atau PDF, formatnya ikut yang sudah kamu pakai. Mulai Rp199rb." />
+  <title>KasirKu — Aplikasi Kasir Gratis untuk UMKM | Kerja dengan Sistem</title>
+  <meta name="description" content="KasirKu: aplikasi kasir gratis untuk warung, kafe, dan toko kecil. Catat penjualan, cetak struk, tutup kas harian, jalan di HP atau laptop dan tetap bisa dipakai tanpa internet. Juga jasa automasi rekap, invoice, dan laporan." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#F2EFE6" />
   <link rel="canonical" href="https://www.kerjadengansistem.web.id/" />
@@ -14,8 +14,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="Kerja dengan Sistem" />
-  <meta property="og:title" content="Kerjaan yang sama tiap minggu? Biar jadi sendiri." />
-  <meta property="og:description" content="Kami buatkan sistem yang mengerjakan rekap, invoice, dan laporanmu. Formatnya ikut Excel yang sudah kamu pakai. Mulai Rp199rb, bayar setelah lihat demo." />
+  <meta property="og:title" content="KasirKu: aplikasi kasir gratis untuk UMKM" />
+  <meta property="og:description" content="Catat penjualan, cetak struk, dan tutup kas harian tanpa ribet. Gratis, jalan di HP atau laptop, bisa dipakai tanpa internet." />
   <meta property="og:url" content="https://www.kerjadengansistem.web.id/" />
   <meta property="og:image" content="https://www.kerjadengansistem.web.id/assets/og.png" />
   <meta property="og:image:width" content="1200" />
@@ -48,6 +48,16 @@
         ]
       },
       {
+        "@type": "SoftwareApplication",
+        "name": "KasirKu",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android, Web",
+        "description": "Aplikasi kasir gratis untuk UMKM: catat penjualan, cetak struk, kelola stok, laporan, dan rekonsiliasi kas harian. Bisa dipakai tanpa internet.",
+        "inLanguage": "id",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR" },
+        "publisher": { "@id": "https://www.kerjadengansistem.web.id/#org" }
+      },
+      {
         "@type": "Service",
         "name": "Jasa automasi rekap, invoice, dan laporan",
         "serviceType": "Automasi kerjaan berulang untuk UMKM dan admin",
@@ -67,11 +77,92 @@
 {{bagian:kepala.html}}
   <main id="isi">
 
-    <!-- 1. Hero -->
-    <section class="hero">
+    <!-- 1. Hero: KasirKu, produk utama -->
+    <section class="hero hero-kasirku" id="kasirku">
       <div class="wadah hero-kisi">
         <div>
-          <h1>Kerjaan yang sama tiap minggu? <span class="tanda">Biar jadi sendiri.</span></h1>
+          <p class="status-baris"><span class="stiker-gratis">GRATIS</span><span class="produk-utama">Produk utama kami</span></p>
+          <h1>KasirKu, <span class="tanda">kasir gratis</span> untuk usaha kecil.</h1>
+          <p class="sub">Catat penjualan, cetak struk, dan tutup kas harian tanpa ribet. Jalan di HP atau laptop, dan tetap bisa dipakai saat internet mati. Dibuat supaya warung, kafe, dan toko kecil tidak perlu lagi mencatat di buku.</p>
+          <div class="aksi">
+            <a class="tbl tbl-utama" {{wa:kasirku-hero|Halo, saya dari website. Saya mau pakai KasirKu (gratis) untuk usaha saya.}}>{{ikon:message-circle}}Mau pakai KasirKu gratis</a>
+            <a class="tbl tbl-kedua" href="#fitur-kasirku" data-ev="klik_fitur" data-asal="kasirku-hero">{{ikon:receipt}}Lihat isinya</a>
+          </div>
+          <ul class="penanda">
+            <li>{{ikon:check}}Gratis, tanpa biaya bulanan</li>
+            <li>{{ikon:check}}Bisa tanpa internet</li>
+            <li>{{ikon:check}}Data tersimpan di perangkatmu</li>
+          </ul>
+        </div>
+
+        <figure class="kk-visual" aria-label="Tampilan KasirKu di laptop dan di HP. Semua produk dan angka adalah data contoh.">
+          <div class="layar kk-laptop">
+            <div class="layar-atas"><span class="titik"></span><span class="titik"></span><span class="titik"></span><span>KasirKu</span><span class="cap">DATA CONTOH</span></div>
+            <img src="/assets/kasirku-kasir-laptop.webp" width="1400" height="875" alt="Layar kasir KasirKu: daftar menu minuman dan makanan, keranjang berisi tiga item, tombol Bayar." />
+          </div>
+          <img class="kk-hp" src="/assets/kasirku-kasir-hp.webp" width="520" height="1066" alt="KasirKu di HP: daftar menu dan keranjang di bagian bawah." loading="lazy" />
+          <img class="kk-ikon" src="/assets/kasirku-ikon-192.png" width="72" height="72" alt="Ikon aplikasi KasirKu" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- 1a. Tentang KasirKu -->
+    <section class="bagian rapat" id="fitur-kasirku">
+      <div class="wadah">
+        <span class="mata">Tentang KasirKu</span>
+        <h2>Kasir yang gampang dipakai, buat usaha yang baru mulai.</h2>
+        <p class="pengantar">Banyak usaha kecil masih mencatat penjualan di buku atau chat, lalu pusing saat uang di laci tidak cocok. KasirKu dibuat untuk membantu UMKM: ketuk menu, terima pembayaran, struk jadi, dan di akhir hari kamu tahu uangmu klop atau selisih. Tanpa pelatihan panjang, tanpa langganan.</p>
+
+        <div class="kisi kisi-3">
+          <article class="kartu">
+            <span class="lencana">{{ikon:receipt}}</span>
+            <h3>Kasir yang cepat dan hati-hati</h3>
+            <p>Ketuk produk, bayar tunai, QRIS, atau transfer. Sebelum bayar ada pratinjau pesanan, jadi kasir tidak salah input. Gambar QRIS tokomu tampil langsung di layar.</p>
+          </article>
+          <article class="kartu">
+            <span class="lencana">{{ikon:file-text}}</span>
+            <h3>Struk siap pakai</h3>
+            <p>Lihat pratinjau struk, cetak atau simpan sebagai PDF, atau kirim ke pelanggan lewat WhatsApp.</p>
+          </article>
+          <article class="kartu">
+            <span class="lencana">{{ikon:clipboard-list}}</span>
+            <h3>Produk dan stok</h3>
+            <p>Tambah produk dengan foto dan varian. Stok berkurang sendiri tiap ada penjualan, dan yang hampir habis diberi tanda.</p>
+          </article>
+          <article class="kartu">
+            <span class="lencana">{{ikon:chart-column}}</span>
+            <h3>Laporan penjualan</h3>
+            <p>Penjualan, produk terlaris, dan laba kotor. Pilih sendiri rentang tanggalnya, lalu ekspor ke CSV bila perlu.</p>
+          </article>
+          <article class="kartu">
+            <span class="lencana">{{ikon:clock}}</span>
+            <h3>Tutup kas tiap hari</h3>
+            <p>Cocokkan uang tunai, QRIS, dan transfer dengan catatan sistem. Hasilnya jelas: klop, atau berapa selisihnya. Setelah disimpan tidak bisa diubah.</p>
+          </article>
+          <article class="kartu">
+            <span class="lencana">{{ikon:shield-check}}</span>
+            <h3>Aman dan bisa tanpa internet</h3>
+            <p>Data tersimpan di perangkatmu sendiri. Pemilik dan kasir punya PIN masing-masing, dan ada fitur backup.</p>
+          </article>
+        </div>
+
+        <div class="kk-gratis">
+          <span class="stiker-gratis">GRATIS</span>
+          <div>
+            <h3>Gratis itu apa adanya.</h3>
+            <p>Tanpa biaya bulanan dan tanpa iklan. Paket gratis cukup untuk usaha kecil yang baru mulai: sampai 50 produk dan 1 pengguna. Kalau nanti butuh lebih banyak produk atau banyak kasir, ada paket Pro sekali bayar. Tanyakan lewat WhatsApp.</p>
+          </div>
+          <a class="tbl tbl-utama" {{wa:kasirku-gratis|Halo, saya dari website. Saya mau pakai KasirKu (gratis) untuk usaha saya.}}>{{ikon:message-circle}}Minta KasirKu lewat WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1b. Jasa automasi (hero lama) -->
+    <section class="hero hero-jasa" id="jasa">
+      <div class="wadah hero-kisi">
+        <div>
+          <span class="mata">Jasa automasi</span>
+          <h2 class="judul-hero">Kerjaan yang sama tiap minggu? <span class="tanda">Biar jadi sendiri.</span></h2>
           <p class="sub">Kami buatkan sistem yang mengerjakan rekap, invoice, dan laporanmu. File masuk, hasilnya jadi Excel atau PDF, formatnya ikut yang sudah kamu pakai.</p>
           <div class="aksi">
             <a class="tbl tbl-utama" {{wa:hero|Halo, saya dari website (bagian atas). Mau cerita soal kerjaan yang ingin saya otomasi.}}>{{ikon:message-circle}}Ceritakan kerjaanmu di WhatsApp</a>
